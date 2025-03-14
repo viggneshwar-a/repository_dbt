@@ -3,9 +3,9 @@
 {{
     config(
         target_schema='my_first_dbt_snapshots',
-        unique_key='id',
+        unique_key='customer_id',
         strategy='timestamp',
-        updated_at='Name'
+        updated_at='customer_name'
     )
 }}
 

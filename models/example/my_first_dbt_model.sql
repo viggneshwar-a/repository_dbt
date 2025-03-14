@@ -10,15 +10,10 @@
 {{ config(materialized='table') }}
 
 with source_data as (
-
-    select 1 as id, 'A' as Name
-    union all
-    select 2 as id, 'B' as Name
-    union all
-    select 3 as id, 'C' as Name
-    union all
-    select 4 as id, NULL as Name
-
+    SELECT 
+    C_CUSTKEY as customer_id,
+    C_NAME as customer_name
+    FROM {{ source('customer_order', 'customer') }}
 )
 
 select *
