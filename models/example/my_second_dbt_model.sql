@@ -1,6 +1,7 @@
 
 -- Use the `ref` function to select from other models
 
-select *
+select id, 
+        lower(Name) as Name
 from {{ ref('my_first_dbt_model') }}
-where id = 1
+where Name is not null

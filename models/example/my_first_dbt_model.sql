@@ -16,6 +16,8 @@ with source_data as (
     select 2 as id, 'B' as Name
     union all
     select 3 as id, 'C' as Name
+    union all
+    select 4 as id, NULL as Name
 
 )
 
