@@ -5,7 +5,7 @@
         target_schema='my_first_dbt_snapshots',
         unique_key='id',
         strategy='timestamp',
-        updated_at='updated_at'
+        updated_at='Name'
     )
 }}
 
