@@ -9,6 +9,6 @@
     )
 }}
 
-select * from {{ source('dbt_viggneshwara', 'my_first_dbt_model') }}
+select * from {{ source('my_source', 'my_first_dbt_model') }}
 
 {% endsnapshot %}
