@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: my_source
+    database: dbt_sample
+    schema: dbt_viggneshwara
+    tables:
+      - name: my_first_dbt_model
