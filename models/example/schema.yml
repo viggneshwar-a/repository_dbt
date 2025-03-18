@@ -19,3 +19,15 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: test
+      description: created to do basic test
+      columns:
+        - name: id
+          tests:
+            - not_null
+            - unique
+        - name: name
+          description: contains name
+          tests:
+            - not_null
