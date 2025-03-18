@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: call_center_table
+    database: dbt_sample
+    schema: call_center_call_center
+    tables:
+      - name: call_center
