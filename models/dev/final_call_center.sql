@@ -1,6 +1,7 @@
 {{ config(materialized='table') }}
 
 with source_data as (
+    SELECT
     CC_CALL_CENTER_SK,
     CC_COMPANY_NAME, 
     cc_call_center_id,
