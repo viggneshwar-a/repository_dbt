@@ -1,4 +1,3 @@
-
 /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
@@ -10,11 +9,10 @@
 {{ config(materialized='table') }}
 
 with source_data as (
-
-    select 1 as id
-    union all
-    select null as id
-
+    SELECT 
+    C_CUSTKEY as customer_id,
+    C_NAME as customer_name
+    FROM {{ source('customer_order', 'customer') }}
 )
 
 select *

@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: my_source
+    database: dbt_sample
+    schema: dbt_viggneshwara
+    tables:
+      - name: my_first_dbt_model
+  - name: customer_order
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer

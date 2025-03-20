@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: final_call_center
+      description: "A starter dbt model"
+      columns:
+          - name: CC_CALL_CENTER_SK
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
