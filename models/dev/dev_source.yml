@@ -6,3 +6,8 @@ sources:
     schema: call_center_call_center
     tables:
       - name: call_center
+  - name: final_order
+    database: dbt_sample
+    schema: STAGE_DBT_VIGGNESHWARA
+    tables:
+      - name: fact_orders
