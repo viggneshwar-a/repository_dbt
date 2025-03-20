@@ -1,0 +1,13 @@
+my_profile:
+  target: dev
+  outputs:
+    development:
+      type: snowflake
+      database: DBT_SAMPLE
+      schema: STAGE_DBT_VIGGNESHWARA
+    production:
+      type: snowflake
+      #host: localhost
+      #user: my_user
+      #password: my_password
+      schema: STAGE_DBT_VIGGNESHWARA
