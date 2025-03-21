@@ -1,13 +1,7 @@
 my_profile:
-  target: dev
+  target: DevEnvironment
   outputs:
-    development:
+    DevEnvironment:
       type: snowflake
       database: DBT_SAMPLE
-      schema: STAGE_DBT_VIGGNESHWARA
-    production:
-      type: snowflake
-      #host: localhost
-      #user: my_user
-      #password: my_password
       schema: STAGE_DBT_VIGGNESHWARA
