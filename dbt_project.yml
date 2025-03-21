@@ -39,6 +39,8 @@ models:
     example:
       +materialized: table
       snowflake_warehouse: compute_wh
+      +schema: DBT_VIGGNESHWARA
     dev:
       +materialized: table
       snowflake_warehouse: compute_wh
+      +schema: DBT_VIGGNESHWARA
