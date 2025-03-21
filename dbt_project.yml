@@ -39,7 +39,6 @@ models:
     example:
       +materialized: table
       snowflake_warehouse: compute_wh
-      +schema: "{{ get_schema_macro('example') }}"
     dev:
       +materialized: table
       snowflake_warehouse: compute_wh
