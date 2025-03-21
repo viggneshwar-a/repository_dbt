@@ -1,5 +1,9 @@
-{% macro get_schema_macro(model_name) %}
-    {% if model_name in ["t_final_orders"] %} 'CALL_CENTER'
-    {% else %} 'DBT_VIGGNESHWARA'
+{% macro generate_schema_name(custom_schema_name, node) %}
+    {% if target.name == 'dev' %}
+        {{ 'dev_schema' }}
+    {% elif target.name == 'prod' %}
+        {{ 'prod_schema' }}
+    {% else %}
+        {{ custom_schema_name or target.schema }}
     {% endif %}
 {% endmacro %}
